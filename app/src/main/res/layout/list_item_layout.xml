@@ -1,0 +1,112 @@
+<!-- list_item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/textIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:hint="1"
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textBks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:hint="BKS: 29-Y5 3333"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textIndex"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textTenXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Ten xe: Wave Alpla 15"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/textChuXe"
+                app:layout_constraintTop_toBottomOf="@+id/textChuXe"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textChuXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:hint="Tên hàng: Bánh kẹo ngọt"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textLoaiXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Chu xe: Nguyen Van A"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/textBks"
+                app:layout_constraintTop_toBottomOf="@+id/textBks"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textHangXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Đơn giá: 150000đ"
+                android:textColor="#000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/textTenXe"
+                app:layout_constraintTop_toBottomOf="@+id/textTenXe"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textNamSx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Số lượng: 150"
+                android:textColor="#000"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/textLoaiXe"
+                app:layout_constraintTop_toBottomOf="@+id/textLoaiXe"
+                tools:ignore="TextSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
